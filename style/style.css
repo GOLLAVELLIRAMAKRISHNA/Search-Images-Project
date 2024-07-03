@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: open Sans, serif;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(26, 15, 99);
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    padding: 120px 0px 40px;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.form-container {
+    width: 550px;
+    background-color: rgba(122, 96, 255, 0.74);
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.btn {
+    margin: 20px auto;
+}
+
+#input-box {
+    flex: 1;
+    height: 100%;
+    padding: 0px 30px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #fff;
+}
+
+.search-btn {
+    height: 100%;
+    padding: 0px 25px;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#load-btn {
+    padding: 10px 20px;
+    background-color: orangered;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+#result-imgs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 80%;
+}
+
+#result-imgs img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:768px) {
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .form-container {
+        width: 350px;
+        height: 50px;
+    }
+
+    .search-btn {
+        padding: 0px 10px;
+    }
+
+    #input-box {
+        padding: 0px 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .form-container {
+        width: 300px;
+        height: 50px;
+    }
+
+    #result-imgs {
+        width: 95%;
+    }
+
+}
